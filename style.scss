@@ -1,0 +1,27 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$font-family: 'Arial, sans-serif';
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: $primary-color;
+
+    .nav-link {
+        color: white;
+        &:hover {
+            color: $secondary-color;
+        }
+    }
+}
+
+.card {
+    transition: transform 0.3s ease;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
